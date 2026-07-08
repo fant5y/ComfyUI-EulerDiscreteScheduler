@@ -146,6 +146,8 @@ class FlowMatchEulerSchedulerNode:
                 }),
                 "max_image_seq_len": ("INT", {
                     "default": 8192,
+                    "max": 8192,
+                    "min": 256,
                     "tooltip": "Maximum sequence length for dynamic shifting. Affects how the scheduler adapts to large images."
                 }),
                 "max_shift": ("FLOAT", {
@@ -155,6 +157,8 @@ class FlowMatchEulerSchedulerNode:
                 }),
                 "num_train_timesteps": ("INT", {
                     "default": 1000,
+                    "min": 1,
+                    "max": 10000,
                     "tooltip": "Timesteps the model was trained with. Should match your model's config (typically 1000)."
                 }),
                 "shift": ("FLOAT", {
