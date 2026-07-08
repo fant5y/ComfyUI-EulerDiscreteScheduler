@@ -129,7 +129,7 @@ class FlowMatchEulerSchedulerNode:
                     "default": 9999,
                     "min": 0,
                     "max": 10000,
-                    "tooltip": "The ending step (index) of the sigma schedule to use. Set higher than 'steps' to use all steps."
+                    "tooltip": "The ending step (index) of the sigma schedule to use. Set higher than 'steps' to use all steps. "
                 }),
                 "base_image_seq_len": ("INT", {
                     "default": 256,
